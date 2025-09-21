@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Utama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #007bff, #28a745);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+            width: 350px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            object-fit: contain;
+        }
+        h1 {
+            margin: 10px 0 20px 0;
+            font-size: 22px;
+            color: #333;
+        }
+        .btn {
+            display: block;
+            width: 94%;
+            padding: 12px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-petugas { background: #007bff; }
+        .btn-manager { background: #28a745; }
+        .btn-petugas:hover { background: #0056b3; transform: scale(1.03); }
+        .btn-manager:hover { background: #1e7e34; transform: scale(1.03); }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <!-- Judul -->
+        <h1>Selamat Datang di Sistem Koperasi</h1>
+
+        <!-- Menu Login -->
+        <a href="login_petugas.php" class="btn btn-petugas">Login Petugas</a>
+        <a href="login_manager.php" class="btn btn-manager">Login Manager</a>
+
+        <!-- Footer -->
+        <footer>
+            &copy; <?= date("Y"); ?> Koperasi Fahri
+        </footer>
+    </div>
+</body>
+</html>
